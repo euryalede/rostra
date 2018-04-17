@@ -22,6 +22,7 @@
 #define _XOS_PLATFORM_COMPILER_HPP
 
 #include "xos/platform/Build.hpp"
+#include "xos/platform/Compiler.h"
 
 namespace xos {
 namespace platform {

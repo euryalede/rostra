@@ -13,22 +13,21 @@
 /// or otherwise) arising in any way out of the use of this software, 
 /// even if advised of the possibility of such damage.
 ///
-///   File: Configure.hpp
+///   File: Version.hpp
 ///
 /// Author: $author$
-///   Date: 4/13/2018
+///   Date: 4/14/2018
 ///////////////////////////////////////////////////////////////////////
-#ifndef _XOS_PLATFORM_CONFIGURE_HPP
-#define _XOS_PLATFORM_CONFIGURE_HPP
-
-#include "xos/platform/Type.hpp"
-#include "xos/platform/Configure.h"
+#ifndef _XOS_LIB_ROSTRA_VERSION_HPP
+#define _XOS_LIB_ROSTRA_VERSION_HPP
 
 namespace xos {
-namespace platform {
+namespace lib {
+namespace rostra {
 
 
-} /// namespace platform
+} /// namespace rostra
+} /// namespace lib
 } /// namespace xos
 
-#endif /// _XOS_PLATFORM_CONFIGURE_HPP 
+#endif /// _XOS_LIB_ROSTRA_VERSION_HPP 

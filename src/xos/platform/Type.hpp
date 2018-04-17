@@ -22,6 +22,7 @@
 #define _XOS_PLATFORM_TYPE_HPP
 
 #include "xos/platform/Define.hpp"
+#include "xos/platform/Type.h"
 
 namespace xos {
 namespace platform {

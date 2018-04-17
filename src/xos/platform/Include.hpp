@@ -22,6 +22,7 @@
 #define _XOS_PLATFORM_INCLUDE_HPP
 
 #include "xos/platform/Compiler.hpp"
+#include "xos/platform/Include.h"
 
 namespace xos {
 namespace platform {

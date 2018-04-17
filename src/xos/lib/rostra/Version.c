@@ -1,3 +1,4 @@
+/*/
 ///////////////////////////////////////////////////////////////////////
 /// Copyright (c) 1988-2018 $organization$
 ///
@@ -13,22 +14,24 @@
 /// or otherwise) arising in any way out of the use of this software, 
 /// even if advised of the possibility of such damage.
 ///
-///   File: Configure.hpp
+///   File: Version.c
 ///
 /// Author: $author$
-///   Date: 4/13/2018
+///   Date: 4/14/2018
 ///////////////////////////////////////////////////////////////////////
-#ifndef _XOS_PLATFORM_CONFIGURE_HPP
-#define _XOS_PLATFORM_CONFIGURE_HPP
+/*/
+#include "xos/lib/rostra/Version.h"
 
-#include "xos/platform/Type.hpp"
-#include "xos/platform/Configure.h"
+#define XOS_LIB_ROSTRA_VERSION_MAJOR 0
+#define XOS_LIB_ROSTRA_VERSION_MINOR 0
+#define XOS_LIB_ROSTRA_VERSION_RELEASE 0
 
-namespace xos {
-namespace platform {
-
-
-} /// namespace platform
-} /// namespace xos
-
-#endif /// _XOS_PLATFORM_CONFIGURE_HPP 
+int XosLibRostraVersionMajor() {
+    return XOS_LIB_ROSTRA_VERSION_MAJOR;
+}
+int XosLibRostraVersionMinor() {
+    return XOS_LIB_ROSTRA_VERSION_MINOR;
+}
+int XosLibRostraVersionRelease() {
+    return XOS_LIB_ROSTRA_VERSION_RELEASE;
+}
