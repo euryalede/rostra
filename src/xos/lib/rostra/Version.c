@@ -22,16 +22,32 @@
 /*/
 #include "xos/lib/rostra/Version.h"
 
+#define XOS_LIB_ROSTRA_VERSION_NAME "rostra"
+#define XOS_LIB_ROSTRA_VERSION_NAME_SEPARATOR "-"
+#define XOS_LIB_ROSTRA_VERSION_MAJOR_SEPARATOR "."
+#define XOS_LIB_ROSTRA_VERSION_MINOR_SEPARATOR XOS_LIB_ROSTRA_VERSION_MAJOR_SEPARATOR
 #define XOS_LIB_ROSTRA_VERSION_MAJOR 0
 #define XOS_LIB_ROSTRA_VERSION_MINOR 0
 #define XOS_LIB_ROSTRA_VERSION_RELEASE 0
 
-int XosLibRostraVersionMajor() {
+const char* XosLibRostraVersionName() {
+    return XOS_LIB_ROSTRA_VERSION_NAME;
+}
+const char* XosLibRostraVersionNameSeparator() {
+    return XOS_LIB_ROSTRA_VERSION_NAME_SEPARATOR;
+}
+const char* XosLibRostraVersionMajorSeparator() {
+    return XOS_LIB_ROSTRA_VERSION_MAJOR_SEPARATOR;
+}
+const char* XosLibRostraVersionMinorSeparator() {
+    return XOS_LIB_ROSTRA_VERSION_MINOR_SEPARATOR;
+}
+unsigned XosLibRostraVersionMajor() {
     return XOS_LIB_ROSTRA_VERSION_MAJOR;
 }
-int XosLibRostraVersionMinor() {
+unsigned XosLibRostraVersionMinor() {
     return XOS_LIB_ROSTRA_VERSION_MINOR;
 }
-int XosLibRostraVersionRelease() {
+unsigned XosLibRostraVersionRelease() {
     return XOS_LIB_ROSTRA_VERSION_RELEASE;
 }

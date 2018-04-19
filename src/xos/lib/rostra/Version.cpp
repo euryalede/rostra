@@ -25,8 +25,50 @@ namespace xos {
 namespace lib {
 namespace rostra {
 
+namespace which {
+typedef lib::Version VersionTImplements;
+///////////////////////////////////////////////////////////////////////
+///  Class: VersionT
+///////////////////////////////////////////////////////////////////////
+template <class TImplements = VersionTImplements>
+class _EXPORT_CLASS VersionT: virtual public TImplements {
+public:
+    typedef TImplements Implements;
+    typedef typename Implements::string_t string_t;
+    VersionT() {}
+    virtual string_t NameSeparator() const {
+        return string_t(XosLibRostraVersionNameSeparator());
+    }
+    virtual string_t MajorSeparator() const {
+        return string_t(XosLibRostraVersionMajorSeparator());
+    }
+    virtual string_t MinorSeparator() const {
+        return string_t(XosLibRostraVersionMinorSeparator());
+    }
+    virtual string_t Name() const {
+        return string_t(XosLibRostraVersionName());
+    }
+    virtual unsigned Major() const {
+        return XosLibRostraVersionMajor();
+    }
+    virtual unsigned Minor() const {
+        return XosLibRostraVersionMinor();
+    }
+    virtual unsigned Release() const {
+        return XosLibRostraVersionRelease();
+    }
+};
+typedef VersionT<> Version;
+} /// namespace which
+
+///////////////////////////////////////////////////////////////////////
+///  Class: Version
+///////////////////////////////////////////////////////////////////////
+const lib::Version& Version::Which() {
+    static const which::Version version;
+    return version;
+}
 
 } /// namespace rostra
 } /// namespace lib
 } /// namespace xos
-

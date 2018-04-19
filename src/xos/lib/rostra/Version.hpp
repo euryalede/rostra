@@ -21,10 +21,19 @@
 #ifndef _XOS_LIB_ROSTRA_VERSION_HPP
 #define _XOS_LIB_ROSTRA_VERSION_HPP
 
+#include "xos/lib/Version.hpp"
+
 namespace xos {
 namespace lib {
 namespace rostra {
 
+///////////////////////////////////////////////////////////////////////
+///  Class: Version
+///////////////////////////////////////////////////////////////////////
+class _EXPORT_CLASS Version {
+public:
+    static const lib::Version& Which();
+};
 
 } /// namespace rostra
 } /// namespace lib

@@ -27,9 +27,13 @@
 extern "C" {
 #endif /*/ defined(__cplusplus)  /*/
 
-extern int XosLibRostraVersionMajor();
-extern int XosLibRostraVersionMinor();
-extern int XosLibRostraVersionRelease();
+extern const char* XosLibRostraVersionName();
+extern const char* XosLibRostraVersionNameSeparator();
+extern const char* XosLibRostraVersionMajorSeparator();
+extern const char* XosLibRostraVersionMinorSeparator();
+extern unsigned XosLibRostraVersionMajor();
+extern unsigned XosLibRostraVersionMinor();
+extern unsigned XosLibRostraVersionRelease();
 
 #if defined(__cplusplus)  
 } /*/ extern "C" /*/
