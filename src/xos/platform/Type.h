@@ -309,6 +309,7 @@ typedef const PCBYTE* PCPCBYTE;
 typedef PCBYTE* PPCBYTE;
 typedef PBYTE* PPBYTE;
 
+typedef byte_t pointer_to_t;
 typedef void* pointer_t;
 
 typedef useconds_t nseconds_t;
